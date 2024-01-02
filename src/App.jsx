@@ -1,6 +1,10 @@
+import { DrumMachine } from "./components"
+
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <DrumMachine />
+    </div>
   )
 }
 
