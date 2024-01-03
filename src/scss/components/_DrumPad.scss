@@ -1,0 +1,26 @@
+@use '../util/' as u;
+
+.drum-pad {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  font-family: u.$rubik;
+  font-size: 1.5rem;
+  font-weight: 600;
+  aspect-ratio: 1/1;
+  color: #0B1957;
+  border-radius: 15px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    background-color: #ffd8d3;
+  }
+}
+
+.active {
+  background-color: #ffd8d3;
+}

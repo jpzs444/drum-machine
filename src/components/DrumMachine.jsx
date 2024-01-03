@@ -4,7 +4,7 @@ import DrumPad from "./DrumPad"
 const DrumMachine = () => {
   return (
     <div id="drum-machine">
-      <div className="drumpads">
+      <div className="drum-pads">
         {drumPads.map((drumPad, ind) => (
           <DrumPad
             key={ind}
@@ -15,7 +15,7 @@ const DrumMachine = () => {
         ))}
       </div>
 
-      <p id="display">Display</p>
+      <p id="display">-</p>
     </div>
   )
 }

@@ -38,7 +38,7 @@ export const drumPads = [
   {
     text: "Z",
     keyCode: 90,
-    audioDesc: "Kick-n'-Hat",
+    audioDesc: "Kick-n-Hat",
     audioSample: "https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3",
   },
   {

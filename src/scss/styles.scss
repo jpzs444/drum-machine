@@ -1,3 +1,23 @@
 @forward 'components';
 @forward 'globals';
 @forward 'util';
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-wrapper {
+  padding: 1rem;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+  }
+}

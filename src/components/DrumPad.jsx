@@ -7,7 +7,7 @@ const DrumPad = ({ text, keyCode, audioDesc, audioSample }) => {
     audio.currentTime = 0;
     audio.play();
     console.log("audio triggered");
-    $('#display').text(audioDesc.split("-").join(" "))
+    $('#display').text(audioDesc.split("-").join(" "));
   }
 
   const handleClick = () => {
@@ -17,6 +17,13 @@ const DrumPad = ({ text, keyCode, audioDesc, audioSample }) => {
   $(document).on("keydown", (e) => {
     if (e.which === keyCode) {
       playAudio();
+      $(`#${audioDesc}`).addClass('active')
+    }
+  });
+
+  $(document).on("keyup", (e) => {
+    if (e.which === keyCode) {
+      $(`#${audioDesc}`).removeClass('active')
     }
   });
 
