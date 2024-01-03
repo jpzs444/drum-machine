@@ -3,7 +3,7 @@ import DrumPad from "./DrumPad"
 const DrumMachine = () => {
   return (
     <div id="drum-machine">
-      <div id="display">
+      <div className="drumpads">
         <DrumPad 
           text="Q"
           keyCode={81} 
@@ -37,7 +37,7 @@ const DrumMachine = () => {
         <DrumPad 
           text="Z"
           keyCode={90} 
-          audioDesc="Kick-n-Hat" 
+          audioDesc="Kick-n'-Hat" 
           audioSample="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"/>
         <DrumPad 
           text="X"
@@ -48,8 +48,10 @@ const DrumMachine = () => {
           text="C"
           keyCode={67} 
           audioDesc="Closed-HH" 
-          audioSample="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"/>     
+          audioSample="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"/>  
       </div>
+
+      <p id="display">Display</p>
     </div>
   )
 }
